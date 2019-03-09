@@ -7,19 +7,19 @@ def selects_all_bears_names_and_orders_in_alphabetical_order
 end
 
 def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
-  "select name, age from bears where alive = 1 order by age asc;"
+  "select name, age from bears where alive = 1 order by age asc"
 end
 
 def selects_oldest_bear_and_returns_name_and_age
-  "select name, age from bears order by age desc limit 1;"
+  "select name, age from bears order by age desc limit 1"
 end
 
 def select_youngest_bear_and_returns_name_and_age
-  "select name, age from bears order by age asc limit 1;"
+  "select name, age from bears order by age asc limit 1"
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "Write your SQL query here"
+  "select color, count(color) from bears group by color order by count(color) desc limit 1"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
